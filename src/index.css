@@ -1,26 +1,18 @@
 @import "tailwindcss";
 
-@layer components{
-    .search-bar{
-        @apply w-0 group-hover:w-[300px] transition-all duration-300 rounded-full
-         group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none  dark:border-gray-800 
-         dark:bg-gray-900 group-hover:dark:bg-gray-800;
-    }
+/* Solo aplicamos estilos oscuros al Navbar */
+.dark.navbar {
+    background-color: #1f2937;
+    /* gray-900 */
+    color: white;
 }
 
-
-root {
-    --bg-color: white;
-    --text-color: black;
+/* Enlaces dentro del Navbar */
+.dark.navbar a {
+    color: white;
 }
 
-.dark {
-    --bg-color: black;
-    --text-color: white;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
+.dark.navbar a:hover {
+    color: #d1d5db;
+    /* gray-300 */
 }
