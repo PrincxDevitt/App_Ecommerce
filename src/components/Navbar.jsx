@@ -68,15 +68,17 @@ const Navbar = () => {
                     </span>
                   </a>
                   {/* Dropdown Links */}
-                  <div className="absolute z-[999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white group-focus:block">
-                    <ul className="space-y-2">
-                      {DropdownLinks.map((data) => (
-                        <li key={data.id}>
-                          <a
-                            className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white duration-200 focus:text-black dark:focus:text-white"
-                            href={data.link}
-                          >
-                            {data.name}
+                <div className="absolute z-[999] hidden group-hover:block w-[200px] rounded-md 
+                  bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white dropdown-menu">
+                  <ul className="space-y-2">
+                    {DropdownLinks.map((data) => (
+                      <li key={data.id}>
+                        <a
+                        className="text-gray-500 dark:text-gray-300 
+                         dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-red-700/20 
+                         rounded-md font-semibold"
+                          href={data.link}>
+                               {data.name}
                           </a>
                         </li>
                       ))}

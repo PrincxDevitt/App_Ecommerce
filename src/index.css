@@ -16,3 +16,22 @@
     color: #d1d5db;
     /* gray-300 */
 }
+
+/* Ajuste para Quick Links en modo oscuro */
+.dark .dropdown-menu {
+    background-color: #1f2937;
+    /* Mismo color que el navbar en oscuro */
+    color: white;
+    border: 1px solid #374151;
+    /* gray-700 */
+}
+
+/* Enlaces dentro del dropdown */
+.dark .dropdown-menu a {
+    color: white;
+}
+
+.dark .dropdown-menu a:hover {
+    color: #d1d5db;
+    /* gray-300 */
+}
